@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.upct.patterns.observer
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.upct.patterns.observer; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.upct.patterns.observer.parser.antlr,
+ org.upct.patterns.observer.generator,
+ org.upct.patterns.observer.scoping,
+ org.upct.patterns.observer.observer,
+ org.upct.patterns.observer.observer.impl,
+ org.upct.patterns.observer.validation,
+ org.upct.patterns.observer.services,
+ org.upct.patterns.observer.parser.antlr.internal,
+ org.upct.patterns.observer.observer.util,
+ org.upct.patterns.observer.serializer,
+ org.upct.patterns.observer
+Import-Package: org.apache.log4j

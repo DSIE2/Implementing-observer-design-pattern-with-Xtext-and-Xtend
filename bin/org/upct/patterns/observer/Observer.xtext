@@ -1,0 +1,24 @@
+grammar org.upct.patterns.observer.Observer with org.eclipse.xtext.	common.Terminals
+
+generate observer "http://www.upct.org/patterns/observer/Observer"
+
+Model:
+	(elements+=Type)*;
+
+Type:
+	Subjects | Observers;
+	
+Subjects:
+	'subjects:'(subjects+=Subject)+';';
+	
+Observers:
+	'observers:'(observers+=Observer)+';';
+
+Subject:
+	subject=ElementType;
+	
+Observer:
+	observer=ElementType;
+	
+ElementType:
+	name=ID;
